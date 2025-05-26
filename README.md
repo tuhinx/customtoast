@@ -6,7 +6,7 @@
 
 <div align="center">
 
-![customtoastView](https://raw.githubusercontent.com/tuhinx/customtoast/refs/heads/master/picture_toasts.png)
+<img src="https://raw.githubusercontent.com/tuhinx/customtoast/refs/heads/master/picture_toasts.png" alt="customtoastView" width="350">
 
 </div>
 

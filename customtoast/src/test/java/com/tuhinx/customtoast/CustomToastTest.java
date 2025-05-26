@@ -61,12 +61,24 @@ public class CustomToastTest {
     public void testToastPositions() {
         // Test all toast positions are available
         CustomToast.ToastPosition[] positions = CustomToast.ToastPosition.values();
-        assertEquals(4, positions.length);
+        assertEquals(11, positions.length);
 
+        // Test basic positions
         assertTrue(containsToastPosition(positions, CustomToast.ToastPosition.TOP));
         assertTrue(containsToastPosition(positions, CustomToast.ToastPosition.CENTER));
         assertTrue(containsToastPosition(positions, CustomToast.ToastPosition.BOTTOM));
         assertTrue(containsToastPosition(positions, CustomToast.ToastPosition.CUSTOM));
+
+        // Test corner positions
+        assertTrue(containsToastPosition(positions, CustomToast.ToastPosition.TOP_LEFT));
+        assertTrue(containsToastPosition(positions, CustomToast.ToastPosition.TOP_RIGHT));
+        assertTrue(containsToastPosition(positions, CustomToast.ToastPosition.BOTTOM_LEFT));
+        assertTrue(containsToastPosition(positions, CustomToast.ToastPosition.BOTTOM_RIGHT));
+
+        // Test edge positions
+        assertTrue(containsToastPosition(positions, CustomToast.ToastPosition.CENTER_LEFT));
+        assertTrue(containsToastPosition(positions, CustomToast.ToastPosition.CENTER_RIGHT));
+        assertTrue(containsToastPosition(positions, CustomToast.ToastPosition.EDGE_TO_EDGE));
     }
 
     // Helper methods
