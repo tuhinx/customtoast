@@ -6,7 +6,7 @@
 
 <div align="center">
 
-![customtoastView](https://raw.githubusercontent.com/tuhinx/customtoast/refs/heads/master/picture_toast.png)
+![customtoastView](https://raw.githubusercontent.com/tuhinx/customtoast/refs/heads/master/picture_toasts.png)
 
 </div>
 
@@ -96,8 +96,8 @@ For vibration features, add to your `AndroidManifest.xml`:
 ### 🎭 **Rich Animation System**
 
 9. **8 Entrance Animations**:
-    - Slide from Top/Bottom/Left/Right
-    - Fade In, Scale Up, Bounce Effect, None
+   - Slide from Top/Bottom/Left/Right
+   - Fade In, Scale Up, Bounce Effect, None
 10. **Custom Animation Duration**: Precise timing control
 11. **Exit Animations**: Smooth fade-out transitions
 12. **Interactive Animations**: Swipe-to-dismiss with gesture recognition
@@ -579,7 +579,6 @@ GradientDrawable.Orientation.BR_TL  // Bottom-right to top-left
 - **↘️ BOTTOM RIGHT** - `showBottomRight()` - Warning toast positioned at bottom-right corner
 - **📍 PERCENTAGE** - `showAtPercentage()` - Info toast at 25% from left, 75% from top
 - **📌 EDGE SNAP** - `showAtEdge()` - Success toast snapped to top edge
-
 
 ## 🤝 Contributing
 
