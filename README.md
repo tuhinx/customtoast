@@ -96,8 +96,8 @@ For vibration features, add to your `AndroidManifest.xml`:
 ### 🎭 **Rich Animation System**
 
 9. **8 Entrance Animations**:
-   - Slide from Top/Bottom/Left/Right
-   - Fade In, Scale Up, Bounce Effect, None
+    - Slide from Top/Bottom/Left/Right
+    - Fade In, Scale Up, Bounce Effect, None
 10. **Custom Animation Duration**: Precise timing control
 11. **Exit Animations**: Smooth fade-out transitions
 12. **Interactive Animations**: Swipe-to-dismiss with gesture recognition
@@ -237,8 +237,8 @@ new customtoast.Builder(this)
     .enableHtmlText(true)
     .enableGradient(true)
     .setGradient(Color.parseColor("#FF6B6B"), Color.parseColor("#4ECDC4"),
-                GradientDrawable.Orientation.LEFT_RIGHT)
-    .setCornerRadius(50f, 10f, 50f, 10f)
+GradientDrawable.Orientation.LEFT_RIGHT)
+        .setCornerRadius(50f, 10f, 50f, 10f)
     .enableShadow(true)
     .show();
 ```
@@ -255,7 +255,7 @@ new customtoast.Builder(this)
         // Handle click event
         Toast.makeText(this, "Toast clicked!", Toast.LENGTH_SHORT).show();
     })
-    .show();
+            .show();
 ```
 
 ### 🎨 **Drawable Resource Examples**
@@ -266,15 +266,15 @@ customtoast.showSuccessWithIcon(this, "⭐ Success with Star!", R.drawable.ic_st
 
 // Custom vector icon with tint color
 customtoast.showWithVectorIcon(this, "🚀 Rocket Toast!",
-    R.drawable.ic_rocket, Color.YELLOW, Color.parseColor("#FF5722"), Color.WHITE);
+                               R.drawable.ic_rocket, Color.YELLOW, Color.parseColor("#FF5722"), Color.WHITE);
 
 // Custom drawable with advanced styling
-new customtoast.Builder(this)
+        new customtoast.Builder(this)
     .setMessage("💎 Diamond Toast!")
     .setIcon(R.drawable.ic_diamond, Color.CYAN)
     .setIconSize(24, 24)
     .setBackgroundColor(Color.parseColor("#9C27B0"))
-    .setTextColor(Color.WHITE)
+        .setTextColor(Color.WHITE)
     .show();
 ```
 
@@ -326,18 +326,18 @@ new customtoast.Builder(this)
     .setIconPosition(customtoast.IconPosition.TOP)
     .enableGradient(true)
     .setGradient(Color.parseColor("#667eea"), Color.parseColor("#764ba2"),
-                GradientDrawable.Orientation.TL_BR)
-    .setCornerRadius(30f)
+GradientDrawable.Orientation.TL_BR)
+        .setCornerRadius(30f)
     .enableShadow(true)
     .setShadow(15f, Color.parseColor("#40000000"))
-    .setStrokeColor(Color.WHITE)
+        .setStrokeColor(Color.WHITE)
     .setStrokeWidth(2)
     .setCustomDuration(4000)
     .enableSwipeToDismiss(true)
     .setOnClickListener(v -> {
         // Your click handling code
-    })
-    .show();
+        })
+        .show();
 ```
 
 ### 🚀 **Android 15 Ultimate Toast**
@@ -350,8 +350,8 @@ new customtoast.Builder(this)
     .setAnimationType(customtoast.AnimationType.SLIDE_FROM_TOP)
     .enableGradient(true)
     .setGradient(Color.parseColor("#4CAF50"), Color.parseColor("#2E7D32"),
-                GradientDrawable.Orientation.LEFT_RIGHT)
-    .setCornerRadius(25f)
+GradientDrawable.Orientation.LEFT_RIGHT)
+        .setCornerRadius(25f)
     .enableShadow(true)
     .enableHapticFeedback(true)
     .setHapticFeedbackType(HapticFeedbackConstants.CONFIRM)
@@ -364,8 +364,8 @@ new customtoast.Builder(this)
     .enableSwipeToDismiss(true)
     .setOnClickListener(v -> {
         // Android 15 enhanced click handling
-    })
-    .show();
+        })
+        .show();
 ```
 
 ## 📋 Changelog
@@ -551,15 +551,7 @@ GradientDrawable.Orientation.BL_TR  // Bottom-left to top-right
 GradientDrawable.Orientation.BR_TL  // Bottom-right to top-left
 ```
 
-## 🎪 Demo App
-
-The library includes a comprehensive demo app that showcases all features:
-
-### 🎪 **Interactive Demo App**
-
-The demo app showcases all features with **20 interactive buttons**:
-
-### 🎨 **Color & Feature Testing (8 buttons)**
+### 🎨 **Color & Feature (8 buttons)**
 
 - **✅ SUCCESS** - `showSuccessWithHaptic()` - Green toast with haptic feedback
 - **❌ ERROR** - `showErrorWithVibration()` - Red toast with vibration
@@ -570,14 +562,14 @@ The demo app showcases all features with **20 interactive buttons**:
 - **⏳ PROGRESS** - Blue loading toast with progress indicator
 - **🌙 DARK** - Dark theme toast with shadow effects
 
-### 🎨 **Drawable Resource Testing (4 buttons)**
+### 🎨 **Drawable Resource (4 buttons)**
 
 - **⭐ STAR** - `showSuccessWithIcon()` - Success toast with star vector icon
 - **❤️ HEART** - `showErrorWithIcon()` - Error toast with heart vector icon
 - **🚀 ROCKET** - Custom rocket toast with yellow tint and orange background
 - **💎 DIAMOND** - Custom diamond toast with cyan tint and purple background
 
-### 🎯 **Position Control Testing (8 buttons)**
+### 🎯 **Position Control (8 buttons)**
 
 - **↖️ TOP LEFT** - `showTopLeft()` - Info toast positioned at top-left corner
 - **↗️ TOP RIGHT** - `showTopRight()` - Warning toast positioned at top-right corner
@@ -588,26 +580,6 @@ The demo app showcases all features with **20 interactive buttons**:
 - **📍 PERCENTAGE** - `showAtPercentage()` - Info toast at 25% from left, 75% from top
 - **📌 EDGE SNAP** - `showAtEdge()` - Success toast snapped to top edge
 
-### 🎪 **Demo Features**
-
-- **🎬 Auto Demo Sequence**: Automatic 44-second showcase starting 2 seconds after launch
-  - **0-32s**: 8 color/feature toasts with 4-second intervals
-  - **32-44s**: 4 drawable resource toasts with 4-second intervals
-- **🎯 Manual Testing**: Tap any of the 20 buttons for instant preview
-- **📱 Professional UI**: Color-coded buttons with organized layout
-- **⚡ Instant Response**: Immediate toast display on button press
-
-### 🚀 **How to Test**
-
-1. **Build and install the demo app**: `./gradlew :app:assembleDebug`
-2. **Install the APK**: `app/build/outputs/apk/debug/app-debug.apk`
-3. **Manual Testing**: Tap any of the 20 buttons to test specific features
-   - **8 Color/Feature buttons**: Test different toast types and features
-   - **4 Drawable buttons**: Test vector icon and drawable resource support
-   - **8 Position buttons**: Test comprehensive position control
-4. **Auto Demo**: Wait 2 seconds for the automatic 44-second showcase
-   - Watch 8 color/feature toasts (0-32 seconds)
-   - Watch 4 drawable resource toasts (32-44 seconds)
 
 ## 🤝 Contributing
 
