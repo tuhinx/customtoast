@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎨 CustomToast Color Demo"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap buttons to see different colored toasts:"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✅ SUCCESS - Green Toast"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="❌ ERROR - Red Toast"
+            android:backgroundTint="#F44336"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnWarning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚠️ WARNING - Orange Toast"
+            android:backgroundTint="#FF9800"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ℹ️ INFO - Blue Toast"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🟣 CUSTOM - Purple Toast"
+            android:backgroundTint="#9C27B0"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnGradient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌈 GRADIENT - Rainbow Toast"
+            android:backgroundTint="#FF6B6B"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏳ PROGRESS - Loading Toast"
+            android:backgroundTint="#607D8B"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌙 DARK - Dark Theme Toast"
+            android:backgroundTint="#424242"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎨 Drawable Resource Examples:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnStar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⭐ STAR - Vector Icon Toast"
+            android:backgroundTint="#FFD700"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnHeart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="❤️ HEART - Vector Icon Toast"
+            android:backgroundTint="#E91E63"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnRocket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚀 ROCKET - Tinted Vector Toast"
+            android:backgroundTint="#FF5722"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnDiamond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💎 DIAMOND - Custom Drawable Toast"
+            android:backgroundTint="#9C27B0"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎯 Position Control Examples:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnTopLeft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="↖️ TOP LEFT"
+                android:backgroundTint="#795548"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="4dp"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnTopRight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="↗️ TOP RIGHT"
+                android:backgroundTint="#795548"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="4dp"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnCenterLeft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⬅️ CENTER LEFT"
+                android:backgroundTint="#607D8B"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="4dp"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnCenterRight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="➡️ CENTER RIGHT"
+                android:backgroundTint="#607D8B"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="4dp"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnBottomLeft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="↙️ BOTTOM LEFT"
+                android:backgroundTint="#795548"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="4dp"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnBottomRight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="↘️ BOTTOM RIGHT"
+                android:backgroundTint="#795548"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="4dp"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📍 PERCENTAGE - 25%, 75% Position"
+            android:backgroundTint="#3F51B5"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnEdgeSnap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📌 EDGE SNAP - Snap to Top Edge"
+            android:backgroundTint="#009688"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auto Demo will start in 2 seconds..."
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
