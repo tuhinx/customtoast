@@ -637,4 +637,4 @@ limitations under the License.
 
 ---
 
-**🎨 customtoast - Making Android Toasts Beautiful Since 2024** ✨
+**🎨 CustomToast - Making Android Toasts Beautiful Since 2024** ✨
