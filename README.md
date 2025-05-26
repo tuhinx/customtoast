@@ -40,7 +40,7 @@
 
 ✨ **Android 14 Support** | 🎨 **Perfect Colors** | 🎭 **Rich Animations** | 🎯 **Position Control** | 🎪 **Drawable Resources** | 🎮 **Interactive Features**
 
-> **🎉 Latest Update (v2.4.0):** Comprehensive position control, drawable resource support, perfect colors, and 50+ features!
+> **🎉 Latest Update (v2.4.1):** Comprehensive position control, drawable resource support, perfect colors, and 50+ features!
 
 </div>
 
@@ -66,11 +66,11 @@ Add the dependency to your app-level `build.gradle` file:
 
 ```gradle
 dependencies {
-    implementation 'com.github.tuhinx:customtoast:2.4.0'
+    implementation 'com.github.tuhinx:customtoast:2.4.1'
 }
 ```
 
-> **Latest Version: 2.4.0** - Includes comprehensive position control, drawable resources, perfect colors, and 50+ features!
+> **Latest Version: 2.4.1** - Includes comprehensive position control, drawable resources, perfect colors, and 50+ features!
 
 ### Step 3: Add Permissions (Optional)
 
@@ -370,7 +370,7 @@ GradientDrawable.Orientation.LEFT_RIGHT)
 
 ## 📋 Changelog
 
-### **2.4.0** - 🎯 **COMPREHENSIVE POSITION CONTROL UPDATE**
+### **2.4.1** - 🎯 **COMPREHENSIVE POSITION CONTROL UPDATE**
 
 - 🎯 **NEW**: 10 position types (TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT, CENTER_LEFT, CENTER_RIGHT, EDGE_TO_EDGE)
 - 🎯 **NEW**: Percentage-based positioning (0.0 to 1.0 coordinates)

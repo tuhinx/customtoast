@@ -51,7 +51,7 @@ afterEvaluate {
                 from components.release // or components.android if needed
                 groupId = 'com.tuhinx'
                 artifactId = 'customtoast'
-                version = '2.4.0'
+                version = '2.4.1'
             }
         }
     }
