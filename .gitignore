@@ -64,3 +64,9 @@ google-services.json
 
 BUILD_SUCCESS_SUMMARY.md
 .qodo
+
+# Module
+/customtoast/
+
+jitpack.yml
+
